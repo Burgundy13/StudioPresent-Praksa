@@ -1,0 +1,26 @@
+.header {
+	background-color: $bg-color-red;
+	position: relative;
+
+	.header__img {
+		position: absolute;
+	}
+}
+
+.nav {
+	padding: 35px 0;
+	margin-left: 50px;
+	.nav__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.nav__link {
+			padding: 5px 20px;
+		}
+	}
+}
+
+.banner {
+	background-color: $color-black;
+}
