@@ -10,10 +10,6 @@
 	list-style: none;
 }
 
-html {
-	font-size: 62.5%;
-}
-
 body {
 	font-family: $font-family;
 	width: 100%;
@@ -25,30 +21,48 @@ a {
 	color: inherit;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .wrap {
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1320px;
 	margin: 0 auto;
-	padding: 0 20px;
+}
+
+.h1 {
+	font-size: 38px;
+	font-weight: $font-weight-l;
+	line-height: 45px;
 }
 
 .h2 {
-	font-size: 32px;
+	font-size: $font-size-l;
 	line-height: 42px;
 	font-weight: $font-weight-l;
 }
 
 .h3 {
 	font-weight: $font-weight-l;
-	font-size: 22px;
+	font-size: $font-size-m;
 	line-height: $line-height-m;
 }
 
+.h4 {
+	font-weight: $font-weight-l;
+	line-height: $line-height-s;
+	font-size: 18px;
+	margin-bottom: $unit-l;
+}
+
 .btn {
+	display: inline-block;
+	min-width: 174px;
 	line-height: $line-height-m;
-	padding: 12px 30px;
+	padding: $unit-s $unit-l;
 	font-weight: $font-weight-m;
-	background-color: $bg-color-dark-red;
-	color: $color-white;
 	border-radius: 40px;
+	text-align: center;
 }

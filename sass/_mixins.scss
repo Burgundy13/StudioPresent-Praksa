@@ -1,0 +1,11 @@
+@mixin media-phone {
+	@media (max-width: 475px) {
+		@content;
+	}
+}
+
+@mixin btn($bg-color, $color, $border-color) {
+	background-color: $bg-color;
+	color: $color;
+	border: 1px solid $border-color;
+}

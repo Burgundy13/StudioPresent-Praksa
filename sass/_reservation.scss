@@ -1,0 +1,40 @@
+.reservation {
+	background-color: $bg-color-dark-red;
+
+	.wrap {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.reservation__content {
+	flex: 0 0 50%;
+	padding: 0 $unit-xxl;
+	.reservation__title {
+		margin-bottom: $unit-l;
+	}
+
+	.reservation__list {
+		margin-bottom: $unit-l;
+		.reservation__item {
+			margin-left: $unit-m;
+			list-style: disc;
+			margin-bottom: $unit-xs;
+		}
+	}
+
+	.reservation__btn {
+		@include btn($color-white, $color-black, $color-border-red);
+	}
+}
+
+.reservation__img {
+	background-image: url(../assets/images/reservation-img.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 55vh;
+	min-width: 50vw;
+	min-height: 642px;
+}

@@ -1,0 +1,38 @@
+.spices {
+	background-color: $bg-color-dark-red;
+
+	.wrap {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}
+
+.spices__img {
+	background-image: url(../assets/images/reservation-img.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 75vh;
+	min-width: 50vw;
+	min-height: 705px;
+}
+
+.spices__content {
+	flex: 0 0 50%;
+	padding: 0 100px;
+
+	.spices__title {
+		margin-bottom: $unit-xs;
+	}
+
+	.spices__subtitle {
+		margin-bottom: $unit-l;
+	}
+
+	.spices__description {
+		line-height: $line-height-m;
+		font-weight: $font-weight-s;
+	}
+}

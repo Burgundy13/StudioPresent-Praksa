@@ -1,0 +1,22 @@
+.hero {
+	position: relative;
+}
+
+.hero__conteiner {
+	position: absolute;
+	top: 25%;
+	height: 348px;
+	width: 629px;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+
+	.hero__content {
+		text-align: justify;
+		padding: 0 50px;
+
+		.hero__description {
+			line-height: $line-height-m;
+		}
+	}
+}

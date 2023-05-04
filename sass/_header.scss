@@ -2,25 +2,66 @@
 	background-color: $bg-color-red;
 	position: relative;
 
-	.header__img {
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.header__img {
+	position: relative;
+	width: 177px;
+
+	img {
 		position: absolute;
+		z-index: 1;
 	}
 }
 
 .nav {
-	padding: 35px 0;
-	margin-left: 50px;
+	padding: $unit-l 0;
+	margin-right: -20px;
+
 	.nav__list {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		.nav__link {
-			padding: 5px 20px;
+			padding: 8px 20px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
 		}
 	}
 }
 
+.icon__pdf {
+	height: 28px;
+	width: $unit-m;
+}
+
+.icon__clock {
+	height: $unit-s;
+	width: $unit-s;
+}
+
 .banner {
 	background-color: $color-black;
+	padding: $unit-xs 0;
+
+	.worktime {
+		display: flex;
+		margin-left: auto;
+		gap: $unit-xs;
+
+		.worktime__info {
+			font-size: $font-size-s;
+			line-height: $line-height-xs;
+
+			.worktime__info--weight {
+				font-weight: $font-weight-l;
+			}
+		}
+	}
 }

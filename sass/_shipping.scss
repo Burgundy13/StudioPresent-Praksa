@@ -1,0 +1,26 @@
+.shipping {
+	background: url(../assets/images/shipping-img.png), rgba(0, 0, 0, 1);
+	height: 50vh;
+	background-position: center;
+	background-size: cover;
+
+	.wrap {
+		height: 100%;
+	}
+}
+
+.shipping__content {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.shipping__title {
+		margin-bottom: $unit-l;
+	}
+
+	.shipping__btn {
+		@include btn($color-white, $color-black, $color-border-red);
+	}
+}

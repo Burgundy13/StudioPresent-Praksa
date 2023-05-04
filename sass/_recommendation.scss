@@ -1,0 +1,38 @@
+.recommendation {
+	background-color: $color-black;
+	text-align: center;
+
+	.recommendation__title {
+		margin-bottom: $unit-l;
+	}
+
+	.recommendation__btn {
+		@include btn($bg-color-dark-red, $color-white, $color-white);
+		margin-bottom: $unit-xl;
+	}
+}
+
+.swiper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $unit-xs;
+	margin-bottom: $unit-xl;
+
+	.swiper__slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border: 1px solid #000000;
+		background: rgba(0, 0, 0, 0.1);
+		position: relative;
+		flex: 0 0 30%;
+
+		.slide__quotes {
+			position: absolute;
+			bottom: -$unit-s;
+			right: $unit-s;
+		}
+	}
+}
