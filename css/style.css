@@ -84,6 +84,55 @@ p:last-of-type {
   border: 1px solid #fff;
 }
 
+.light__mode {
+  text-align: end;
+}
+.light__mode .light__btn {
+  background-color: transparent;
+  padding: 8px;
+  border: none;
+  color: #fff;
+}
+.light__mode .light__btn .change-theme {
+  font-size: 42px;
+  cursor: pointer;
+}
+
+body.light-theme {
+  background-color: #fff;
+}
+body.light-theme .banner {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.9411764706);
+}
+body.light-theme .about,
+body.light-theme .products,
+body.light-theme .shipping,
+body.light-theme .awards,
+body.light-theme .recommendation,
+body.light-theme .recommendation__subtitle {
+  color: rgba(0, 0, 0, 0.9411764706);
+}
+body.light-theme .card__text {
+  color: #fff;
+}
+body.light-theme .awards__img,
+body.light-theme .awards__logo,
+body.light-theme .products__logo {
+  background-color: #a62120;
+}
+body.light-theme .awards .card__description {
+  color: rgba(0, 0, 0, 0.9411764706);
+}
+body.light-theme .recommendation__slide {
+  background: rgba(0, 0, 0, 0.9411764706);
+  color: #fff;
+  opacity: 0.8;
+}
+body.light-theme .btn--primary {
+  color: #fff;
+}
+
 .header {
   background-color: #b50014;
   position: relative;
@@ -103,8 +152,8 @@ p:last-of-type {
 }
 
 .nav {
-  padding: 32px 0;
   margin-right: -20px;
+  padding-top: 32px;
 }
 .nav .nav__list {
   display: flex;
@@ -140,6 +189,7 @@ p:last-of-type {
 .banner .worktime .worktime__info {
   font-size: 14px;
   line-height: 8px;
+  padding-top: 5px;
 }
 .banner .worktime .worktime__info .worktime__info--weight {
   font-weight: 700;

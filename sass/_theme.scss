@@ -1,0 +1,61 @@
+//Light mode
+
+.light__mode {
+	text-align: end;
+
+	.light__btn {
+		background-color: transparent;
+		padding: $unit-xs;
+		border: none;
+		color: $color-white;
+
+		.change-theme {
+			font-size: 42px;
+			cursor: pointer;
+		}
+	}
+}
+
+body.light-theme {
+	background-color: $color-white;
+
+	.banner {
+		background-color: $color-white;
+		color: $color-black;
+	}
+
+	.about,
+	.products,
+	.shipping,
+	.awards,
+	.recommendation,
+	.recommendation__subtitle {
+		color: $color-black;
+	}
+
+	.card__text {
+		color: $color-white;
+	}
+
+	.awards__img,
+	.awards__logo,
+	.products__logo {
+		background-color: $bg-color-dark-red;
+	}
+
+	.awards {
+		.card__description {
+			color: $color-black;
+		}
+	}
+
+	.recommendation__slide {
+		background: $color-black;
+		color: $color-white;
+		opacity: 0.8;
+	}
+
+	.btn--primary {
+		color: $color-white;
+	}
+}

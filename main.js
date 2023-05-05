@@ -6,7 +6,6 @@ const swiperRecommendation = new Swiper(".js-recommendation-slider", {
 	slidesPerView: 3,
 	spaceBetween: 70,
 	centeredSlides: true,
-	loop: true,
 	initialSlide: 1,
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -18,7 +17,6 @@ const swiperRecommendation = new Swiper(".js-recommendation-slider", {
 
 const swiperHero = new Swiper(".js-hero-slider", {
 	slidesPerView: 1,
-	centeredSlides: true,
 	initialSlide: 0,
 	loop: true,
 	pagination: {
@@ -31,4 +29,35 @@ const swiperHero = new Swiper(".js-hero-slider", {
 	},
 });
 
-console.log(swiperHero);
+// Dark Light Theme
+
+const themeButton = document.getElementById("theme-button");
+const lightTheme = "light-theme";
+const iconTheme = "bx-toggle-right";
+
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+	document.body.classList.contains(lightTheme) ? "light" : "dark";
+const getCurrentIcon = () =>
+	themeButton.classList.contains(iconTheme)
+		? "bx-toggle-left"
+		: "bx-toggle-right";
+
+if (selectedTheme) {
+	document.body.classList[selectedTheme === "light" ? "add" : "remove"](
+		lightTheme
+	);
+	themeButton.classList[selectedIcon === "bx-toggle-left" ? "add" : "remove"](
+		iconTheme
+	);
+}
+
+themeButton.addEventListener("click", () => {
+	document.body.classList.toggle(lightTheme);
+	themeButton.classList.toggle(iconTheme);
+
+	localStorage.setItem("selected-theme", getCurrentTheme());
+	localStorage.setItem("selected-icon", getCurrentIcon());
+});

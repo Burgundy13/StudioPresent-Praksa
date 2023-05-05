@@ -19,8 +19,8 @@
 }
 
 .nav {
-	padding: $unit-l 0;
 	margin-right: -20px;
+	padding-top: $unit-l;
 
 	.nav__list {
 		display: flex;
@@ -60,6 +60,7 @@
 		.worktime__info {
 			font-size: $font-size-s;
 			line-height: $line-height-xs;
+			padding-top: 5px;
 
 			.worktime__info--weight {
 				font-weight: $font-weight-l;
