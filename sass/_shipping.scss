@@ -1,7 +1,7 @@
 .shipping {
 	@include bg-img("../assets/images/shipping-img.png");
 	height: 55vh;
-
+	background-color: $color-black;
 	.wrap {
 		height: 100%;
 	}

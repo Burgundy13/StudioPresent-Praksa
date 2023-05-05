@@ -107,7 +107,6 @@ body.light-theme .banner {
 }
 body.light-theme .about,
 body.light-theme .products,
-body.light-theme .shipping,
 body.light-theme .awards,
 body.light-theme .recommendation,
 body.light-theme .recommendation__subtitle {
@@ -481,6 +480,7 @@ body.light-theme .btn--primary {
   background-size: cover;
   background-repeat: no-repeat;
   height: 55vh;
+  background-color: rgba(0, 0, 0, 0.9411764706);
 }
 .shipping .wrap {
   height: 100%;
