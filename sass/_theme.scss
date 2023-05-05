@@ -56,5 +56,9 @@ body.light-theme {
 
 	.btn--primary {
 		color: $color-white;
+
+		&:hover {
+			color: $color-blackhhhh;
+		}
 	}
 }

@@ -131,6 +131,9 @@ body.light-theme .recommendation__slide {
 body.light-theme .btn--primary {
   color: #fff;
 }
+body.light-theme .btn--primary:hover {
+  color: rgba(0, 0, 0, 0.9411764706);
+}
 
 .header {
   background-color: #b50014;
