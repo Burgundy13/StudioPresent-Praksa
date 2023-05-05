@@ -1,6 +1,6 @@
 .awards {
-	background-color: $color-black;
 	padding: $padding-section;
+	padding-bottom: $unit-lm;
 }
 
 .awards__container {
@@ -18,22 +18,22 @@
 		.awards__img {
 			flex: 0 0 40%;
 		}
+	}
+}
 
-		.awards__content {
-			flex: 0 0 40%;
-			display: flex;
-			align-items: flex-start;
-			justify-content: center;
-			flex-direction: column;
+.awards__content {
+	flex: 0 0 40%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
 
-			.awards__title {
-				margin-bottom: $unit-l;
-			}
+	.awards__title {
+		margin-bottom: $unit-l;
+	}
 
-			.awards__btn {
-				@include btn($bg-color-dark-red, $color-white, $color-white);
-			}
-		}
+	.awards__btn {
+		@include btn;
 	}
 }
 
@@ -49,11 +49,16 @@
 
 	.awards__card {
 		flex: 0 0 15%;
-	}
+		margin-bottom: $unit-s;
 
-	.award__description {
-		text-align: center;
-		line-height: $line-height-s;
-		font-weight: $font-weight-s;
+		.card__img {
+			margin-bottom: $unit-xs;
+		}
+
+		.card__description {
+			text-align: center;
+			line-height: $line-height-s;
+			color: $color-gray;
+		}
 	}
 }

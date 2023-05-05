@@ -11,10 +11,10 @@
 .header__img {
 	position: relative;
 	width: 177px;
+	z-index: 2;
 
 	img {
 		position: absolute;
-		z-index: 1;
 	}
 }
 
@@ -41,6 +41,8 @@
 	width: $unit-m;
 }
 
+//Banner
+
 .icon__clock {
 	height: $unit-s;
 	width: $unit-s;
@@ -64,4 +66,11 @@
 			}
 		}
 	}
+}
+
+//Hamburger menu
+
+.hamburger,
+.nav__menu {
+	display: none;
 }

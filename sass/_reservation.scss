@@ -10,31 +10,31 @@
 .reservation__content {
 	flex: 0 0 50%;
 	padding: 0 $unit-xxl;
+
 	.reservation__title {
 		margin-bottom: $unit-l;
 	}
 
 	.reservation__list {
-		margin-bottom: $unit-l;
+		margin-bottom: $unit-lm;
+		margin-left: $unit-m;
+		list-style: disc;
+
 		.reservation__item {
-			margin-left: $unit-m;
-			list-style: disc;
-			margin-bottom: $unit-xs;
+			&:not(:last-of-type) {
+				margin-bottom: $unit-xs;
+			}
 		}
 	}
-
 	.reservation__btn {
-		@include btn($color-white, $color-black, $color-border-red);
+		@include btn;
 	}
 }
 
 .reservation__img {
-	background-image: url(../assets/images/reservation-img.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	@include bg-img("../assets/images/reservation-img.jpg");
 	width: 100%;
 	height: 55vh;
 	min-width: 50vw;
-	min-height: 642px;
+	min-height: 680px;
 }

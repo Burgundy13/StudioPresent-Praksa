@@ -15,6 +15,10 @@
 			font-weight: $font-weight-m;
 			font-size: $font-size-s;
 			line-height: $line-height-m;
+
+			.footer__address {
+				margin-bottom: $unit-xs;
+			}
 		}
 	}
 }
@@ -35,6 +39,8 @@
 		gap: $unit-xs;
 	}
 }
+
+//Copyright
 
 .copyright {
 	background-color: $bg-color-footer;

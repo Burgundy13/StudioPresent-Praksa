@@ -1,5 +1,4 @@
 .about {
-	background-color: $color-black;
 	padding: $padding-section;
 
 	.about__container {
@@ -18,28 +17,30 @@
 		margin-bottom: $unit-l;
 	}
 
-	.about__info {
-		margin-bottom: $unit-xs;
-	}
-
 	.about__description {
 		margin-bottom: $unit-xl;
 	}
 
 	.about__btn {
-		@include btn($bg-color-dark-red, $color-white, $color-white);
+		@include btn;
+
+		&:first-of-type {
+			margin-right: $unit-s;
+		}
 	}
 }
 
-.about__wrapper {
+.about__imgs--big {
+	margin-bottom: $unit-s;
+}
+
+.about__imgs--small {
 	display: flex;
 	justify-content: space-between;
+	gap: $unit-s;
 
-	.about__image {
+	.about__img {
 		height: 165px;
 		width: 165px;
 	}
-}
-.about__images--big {
-	margin-bottom: 15px;
 }

@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Swiper Css -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<!-- AOS Css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>StudioPresent Zadatak</title>
 	</head>
@@ -13,7 +20,7 @@
 		<header class="header">
 			<div class="wrap">
 				<!-- Navigation Start -->
-				<div class="header__img">
+				<div class="header__img" data-aos="zoom-in" data-aos-duration="3000">
 					<img src="assets/images/logo.png" alt="logo" />
 				</div>
 				<nav class="nav">
@@ -49,18 +56,32 @@
 							>
 						</li>
 					</ul>
+					<div class="hamburger">
+						<a class="nav__link" href="#">
+							<div class="icon__pdf">
+								<img src="assets/images/pdf.png" alt="pdf logo" />
+							</div>
+							download</a
+						>
+					</div>
+					<button class="nav__menu">
+						<span class="menu__bars">
+							<span class="menu__bar menu__bar--up"></span>
+							<span class="menu__bar menu__bar--middle"></span>
+							<span class="menu__bar menu__bar--down"></span
+						></span>
+					</button>
 				</nav>
 				<!-- Navigation End -->
 			</div>
+
+			<!-- Banner Start -->
+
 			<div class="banner">
 				<div class="wrap">
 					<div class="worktime">
 						<div class="icon__clock">
-							<img
-								class="worktime__logo"
-								src="assets/images/clock.png"
-								alt="clock logo"
-							/>
+							<img src="assets/images/clock.png" alt="clock logo" />
 						</div>
 						<p class="worktime__info">
 							<span class="worktime__info--weight">Opentime:</span> Di. - Fr.:
@@ -69,6 +90,8 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Banner End -->
 		</header>
 
 		<!-- Header End -->
@@ -78,22 +101,60 @@
 		<main>
 			<!-- Hero Section Start -->
 
-			<section class="hero">
-				<img
-					src="assets/images/hero-img.jpg"
-					alt="hero img"
-					class="hero__image"
-				/>
-				<div class="hero__conteiner">
-					<div class="hero__content">
-						<h1 class="hero__title h1">Heiko Brath Metzgermeister</h1>
-						<p class="hero__description">
-							Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
-							Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
-							nam Aperol Spritz probatus pertinax.
-						</p>
+			<section class="hero swiper js-hero-slider">
+				<div class="hero__container swiper-wrapper">
+					<div class="hero__content hero__content--one swiper-slide">
+						<div class="hero__text">
+							<div class="hero__wrap">
+								<h1 class="hero__title">Heiko Brath Metzgermeister</h1>
+								<p>
+									Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+									Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
+									ne, nam Aperol Spritz probatus pertinax.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero__content hero__content--two swiper-slide">
+						<div class="hero__text">
+							<div class="hero__wrap">
+								<h1 class="hero__title">Henry Schmidt</h1>
+								<p>
+									Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+									Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
+									ne, nam Aperol Spritz probatus pertinax.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero__content hero__content--three swiper-slide">
+						<div class="hero__text">
+							<div class="hero__wrap">
+								<h1 class="hero__title">Everett Wagner Weber</h1>
+								<p>
+									Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+									Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
+									ne, nam Aperol Spritz probatus pertinax.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero__content hero__content--four swiper-slide">
+						<div class="hero__text">
+							<div class="hero__wrap">
+								<h1 class="hero__title">Julia Schneider</h1>
+								<p>
+									Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+									Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
+									ne, nam Aperol Spritz probatus pertinax.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</section>
 
 			<!-- Hero Section End -->
@@ -103,10 +164,14 @@
 			<section class="about">
 				<div class="wrap">
 					<div class="about__container">
-						<div class="about__content">
-							<h2 class="about__title h2">Dry aged</h2>
-							<h3 class="about__subtitle h3">Alte Wutz, Dry Aged</h3>
-							<p class="about__info">
+						<div
+							class="about__content"
+							data-aos="fade-right"
+							data-aos-easing="linear"
+						>
+							<h2 class="about__title">Dry aged</h2>
+							<h3 class="about__subtitle">Alte Wutz, Dry Aged</h3>
+							<p>
 								Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
 								Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
 								minim veniam, Turnbeutel nostrud exercitation ullamco laboris
@@ -119,29 +184,46 @@
 								denique nominavi id. Ohrwurm expetenda nam an, his ei Reise
 								euismod assentior.
 							</p>
-							<div class="about__btns">
-								<a class="about__btn btn" href="#">Dry aged</a>
-								<a class="about__btn btn" href="#">Alte Wurtz</a>
+							<div class="about__wrap">
+								<a class="about__btn btn--primary" href="#">Dry aged</a>
+								<a class="about__btn btn--primary" href="#">Alte Wurtz</a>
 							</div>
 						</div>
-						<div class="about__images">
-							<div class="about__images--big">
+						<div class="about__wrapper">
+							<div
+								class="about__imgs--big"
+								data-aos="fade-down"
+								data-aos-easing="linear"
+								data-aos-duration="1500"
+							>
 								<img src="assets/images/Meat-1.jpg" alt="meat on grill" />
 							</div>
-							<div class="about__wrapper">
-								<div class="about__image">
+							<div class="about__imgs--small">
+								<div
+									class="about__img"
+									data-aos="flip-right"
+									data-aos-duration="4000"
+								>
 									<img
 										src="assets/images/Meat-2.jpg"
 										alt="t bone steak on cutting board"
 									/>
 								</div>
-								<div class="about__image">
+								<div
+									class="about__img"
+									data-aos="flip-right"
+									data-aos-duration="4000"
+								>
 									<img
 										src="assets/images/Meat-3.jpg"
 										alt="ramstek on cutting board"
 									/>
 								</div>
-								<div class="about__image">
+								<div
+									class="about__img"
+									data-aos="flip-right"
+									data-aos-duration="4000"
+								>
 									<img
 										src="assets/images/Meat-4.jpg"
 										alt="bacon on cutting board"
@@ -159,8 +241,13 @@
 
 			<section class="reservation">
 				<div class="wrap">
-					<div class="reservation__content">
-						<h2 class="reservation__title h2">
+					<div
+						class="reservation__content"
+						data-aos="fade-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+					>
+						<h2 class="reservation__title">
 							Buchen Sie den <br />
 							Grillkurs jetzt
 						</h2>
@@ -172,7 +259,7 @@
 								lernen Sie die Kunst des Grillens
 							</li>
 						</ul>
-						<a class="reservation__btn btn" href="#">Grillkurs</a>
+						<a class="reservation__btn btn--secondary" href="#">Grillkurs</a>
 					</div>
 					<div class="reservation__img"></div>
 				</div>
@@ -184,68 +271,92 @@
 
 			<section class="products">
 				<div class="wrap">
-					<div class="products__content">
-						<h2 class="products__title h2">Das Handwerk</h2>
-						<h3 class="products__subtitle h3">
+					<div
+						class="products__content"
+						data-aos="fade-zoom-in"
+						data-aos-easing="ease-in-back"
+						data-aos-delay="1000"
+						data-aos-offset="0"
+					>
+						<h2 class="products__title">Das Handwerk</h2>
+						<h3 class="products__subtitle">
 							alles über unsere Hausgemachte Produkte
 						</h3>
-						<p class="products__description">
+						<p>
 							Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
 							Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
 							minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
-							Sprechen Sie deutsch aliquip ex ea commodo consequat. <br />
+							Sprechen Sie deutsch aliquip ex ea commodo consequat.
+						</p>
+						<p>
 							Wiener Schnitzel aute irure dolor in Guten Tag mollit anim
-							Stuttgart. <br />
+							Stuttgart.
+						</p>
+						<p class="products__description">
 							id latine indoctum complectitur HugoClub Mate mea meliore denique
 							nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
 							assentior
 						</p>
-						<a class="products__btn btn" href="#">Das Handwerk</a>
+						<a class="products__btn btn--primary" href="#">Das Handwerk</a>
 					</div>
-					<div class="products__logo">
-						<img
-							class="logo__img"
-							src="assets/images/logo-2.png"
-							alt="logo img"
-						/>
+					<div class="products__logo" data-aos="zoom-in">
+						<img src="assets/images/logo-2.png" alt="logo img" />
 					</div>
 					<div class="products__cards">
 						<div class="products__card">
 							<div class="card__img">
 								<img
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="3000"
 									src="assets/images/Meat-4.jpg"
 									alt="hot dog on cutting board"
 								/>
 							</div>
 							<div class="card__text">
-								<h2 class="card__title h2">Wurstchen</h2>
+								<h3 class="card__title">Wurstchen</h3>
 							</div>
 						</div>
 						<div class="products__card">
 							<div class="card__img">
 								<img
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="3000"
 									src="assets/images/Meat-2.jpg"
 									alt="roasted chicken on plate"
 								/>
 							</div>
 							<div class="card__text">
-								<h2 class="card__title h2">Hahnchen</h2>
+								<h3 class="card__title">Hahnchen</h3>
 							</div>
 						</div>
 						<div class="products__card">
 							<div class="card__img">
-								<img src="assets/images/Meat-3.jpg" alt="pork meat" />
+								<img
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="3000"
+									src="assets/images/Meat-3.jpg"
+									alt="pork meat"
+								/>
 							</div>
 							<div class="card__text">
-								<h2 class="card__title h2">Schwein</h2>
+								<h3 class="card__title">Schwein</h3>
 							</div>
 						</div>
 						<div class="products__card">
 							<div class="card__img">
-								<img src="assets/images/Meat-4.jpg" alt="beef meat" />
+								<img
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="3000"
+									src="assets/images/Meat-4.jpg"
+									alt="beef meat"
+								/>
 							</div>
 							<div class="card__text">
-								<h2 class="card__title h2">Rind</h2>
+								<h3 class="card__title">Rind</h3>
 							</div>
 						</div>
 					</div>
@@ -259,17 +370,21 @@
 			<section class="spices">
 				<div class="wrap">
 					<div class="spices__img"></div>
-					<div class="spices__content">
-						<h2 class="spices__title h2">Custome spices for your meat</h2>
-						<h3 class="spices__subtitle h3">
+					<div
+						class="spices__content"
+						data-aos="fade-left"
+						data-aos-duration="2000"
+					>
+						<h2 class="spices__title">Custome spices for your meat</h2>
+						<h3 class="spices__subtitle">
 							Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch
 						</h3>
-						<p class="spices__description">
+						<p>
 							Odio principes iracundia Müller Rice pri. Ut vel solum mandamus,
 							Kartoffelkopf natum adversarium ei ius, diam Schmetterling
 							honestatis eum.
 						</p>
-						<p class="spices__description">
+						<p>
 							Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
 							tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim
 							ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris
@@ -285,9 +400,14 @@
 
 			<section class="shipping">
 				<div class="wrap">
-					<div class="shipping__content">
-						<h2 class="shipping__title h2">Fleischversand</h2>
-						<a class="shipping__btn btn" href="#">Jetzt bestellen</a>
+					<div
+						class="shipping__content"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500"
+					>
+						<h2 class="shipping__title">Fleischversand</h2>
+						<a class="shipping__btn btn--secondary" href="#">Jetzt bestellen</a>
 					</div>
 				</div>
 			</section>
@@ -300,60 +420,72 @@
 				<div class="wrap">
 					<div class="awards__container">
 						<div class="awards__wrapper">
-							<div class="awards__img">
+							<div
+								class="awards__img"
+								data-aos-duration="2000"
+								data-aos="fade-right"
+							>
 								<img
 									src="assets/images/genussnetz-logo.png"
 									alt="genussnetz logo"
 								/>
 							</div>
-							<div class="awards__content">
-								<h2 class="awards__title h2">
+							<div
+								class="awards__content"
+								data-aos="fade-left"
+								data-aos-duration="2000"
+							>
+								<h2 class="awards__title">
 									Metzgerei Brath ist Mitglied im Genussnetzwerk
 								</h2>
-								<a class="awards__btn btn" href="#">Das Handwerk</a>
+								<a class="awards__btn btn--primary" href="#">Das Handwerk</a>
 							</div>
 						</div>
-						<div class="awards__logo">
+						<div class="awards__logo" data-aos="zoom-in">
 							<img src="assets/images/logo-2.png" alt="logo img" />
 						</div>
-						<div class="awards__cards">
-							<h2 class="awards__title h2">Auszeichnungen</h2>
+						<div
+							class="awards__cards"
+							data-aos="flip-down"
+							data-aos-duration="3000"
+						>
+							<h2 class="awards__title">Auszeichnungen</h2>
 							<div class="awards__card">
 								<img
-									class="award__img"
+									class="card__img"
 									src="assets/images/award-1.png"
 									alt="award img"
 								/>
-								<p class="award__description">
+								<p class="card__description">
 									Tollit argumentum genau Saepe lobortis
 								</p>
 							</div>
 							<div class="awards__card">
 								<img
-									class="award__img"
-									src="assets/images/award-4.png"
+									class="card__img"
+									src="assets/images/award-2.png"
 									alt="award img"
 								/>
-								<p class="award__description">Schneewittchen denique</p>
+								<p class="card__description">Schneewittchen denique</p>
 							</div>
 							<div class="awards__card">
 								<img
-									class="award__img"
+									class="card__img"
 									src="assets/images/award-3.png"
 									alt="award img"
 								/>
-								<p class="award__description">Grimms Märchen expetenda</p>
+								<p class="card__description">Grimms Märchen expetenda</p>
 							</div>
 							<div class="awards__card">
 								<img
-									class="award__img"
+									class="card__img"
 									src="assets/images/award-4.png"
 									alt="award img"
 								/>
-								<p class="award__description">Mettwurst mei ullum gloriatur.</p>
+								<p class="card__description">Mettwurst mei ullum gloriatur.</p>
 							</div>
 						</div>
-						<div class="awards__logos">
+						<div data-aos="zoom-in">
 							<img src="assets/images/logo-2.png" alt="logo img" />
 						</div>
 					</div>
@@ -366,63 +498,101 @@
 
 			<section class="recommendation">
 				<div class="wrap">
-					<h4 class="h4">Empfehlungs</h4>
-					<h2 class="recommendation__title h2">Was die Leute über uns sagen</h2>
+					<p
+						class="recommendation__subtitle"
+						data-aos="fade-up-right"
+						data-aos-duration="3000"
+					>
+						Empfehlungs
+					</p>
+					<h2
+						class="recommendation__title"
+						data-aos="fade-up-left"
+						data-aos-duration="3000"
+					>
+						Was die Leute über uns sagen
+					</h2>
 
-					<!-- SWIPER -->
-
-					<div class="swiper">
-						<div class="swiper__slide">
-							<div class="slide__img">
-								<img src="./assets/images/swiper-img.png" alt="" />
-								<img src="./assets/images/stars.png" alt="" />
+					<div class="recommendation__slider swiper js-recommendation-slider">
+						<div class="swiper-wrapper">
+							<div class="recommendation__slide swiper-slide">
+								<div class="slide__img">
+									<img
+										class="icon__circle"
+										src="./assets/images/swiper-img.png"
+										alt=""
+									/>
+									<img
+										class="icon__star"
+										src="./assets/images/stars.png"
+										alt=""
+									/>
+								</div>
+								<p class="slide__description">
+									Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+									Schnitzel aute irure dolor in reprehenderit Guten Tag mollit
+									anim Stuttgart.
+								</p>
+								<p class="slide__person">Maria Kartofeln</p>
+								<p class="slide__job">Sinker</p>
+								<div class="slide__quotes">
+									<img src="./assets/images/quotes.png" alt="" />
+								</div>
 							</div>
-							<p class="slide__description">
-								Wiener Schnitzel amet, consectetur Handtasche elit, sed do
-								eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
-								Ut Turnbeutel nostrud exercitation ullamco .
-							</p>
-							<p class="slide__person">Halling Tobias</p>
-							<p class="slide__job">Koch</p>
-							<div class="slide__quotes">
-								<img src="./assets/images/quotes.png" alt="" />
+							<div class="recommendation__slide swiper-slide">
+								<div class="slide__img">
+									<img
+										class="icon__circle"
+										src="./assets/images/swiper-img.png"
+										alt=""
+									/>
+									<img
+										class="icon__star"
+										src="./assets/images/stars.png"
+										alt=""
+									/>
+								</div>
+								<p class="slide__description">
+									Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+									eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
+									Ut Turnbeutel nostrud exercitation ullamco .
+								</p>
+								<p class="slide__person">Halling Tobias</p>
+								<p class="slide__job">Koch</p>
+								<div class="slide__quotes">
+									<img src="./assets/images/quotes.png" alt="" />
+								</div>
+							</div>
+							<div class="recommendation__slide swiper-slide">
+								<div class="slide__img">
+									<img
+										class="icon__circle"
+										src="./assets/images/swiper-img.png"
+										alt="swiper logo"
+									/>
+									<img
+										class="icon__star"
+										src="./assets/images/stars.png"
+										alt="three star rating"
+									/>
+								</div>
+								<p class="slide__description">
+									Achtung fur atine indoctum complectitur HugoClub Mate mea
+									meliore denique nominavi id. Ohrwurm expetenda nam an, his ei
+									Reise euismod assentior.
+								</p>
+								<p class="slide__person">Rene Weinstein</p>
+								<p class="slide__job">Kellner</p>
+								<div class="slide__quotes">
+									<img src="./assets/images/quotes.png" alt="" />
+								</div>
 							</div>
 						</div>
-						<div class="swiper__slide">
-							<div class="slide__img">
-								<img src="./assets/images/swiper-img.png" alt="" />
-								<img src="./assets/images/stars.png" alt="" />
-							</div>
-							<p class="slide__description">
-								Wiener Schnitzel amet, consectetur Handtasche elit, sed do
-								eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
-								Ut Turnbeutel nostrud exercitation ullamco .
-							</p>
-							<p class="slide__person">Halling Tobias</p>
-							<p class="slide__job">Koch</p>
-							<div class="slide__quotes">
-								<img src="./assets/images/quotes.png" alt="" />
-							</div>
-						</div>
-						<div class="swiper__slide">
-							<div class="slide__img">
-								<img src="./assets/images/swiper-img.png" alt="" />
-								<img src="./assets/images/stars.png" alt="" />
-							</div>
-							<p class="slide__description">
-								Wiener Schnitzel amet, consectetur Handtasche elit, sed do
-								eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
-								Ut Turnbeutel nostrud exercitation ullamco .
-							</p>
-							<p class="slide__person">Halling Tobias</p>
-							<p class="slide__job">Koch</p>
-							<div class="slide__quotes">
-								<img src="./assets/images/quotes.png" alt="" />
-							</div>
-						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 
-					<a class="recommendation__btn btn" href="#">Alle Berichte</a>
+					<a class="recommendation__btn btn--primary" href="#">Alle Berichte</a>
 				</div>
 			</section>
 
@@ -441,7 +611,7 @@
 							<img src="./assets/images/icons-footer.png" alt="" />
 						</div>
 						<div class="footer__info">
-							<address>
+							<address class="footer__address">
 								Klauprechtstraße 25 76137 <br />
 								Karlsruhe, Germany
 							</address>
@@ -449,7 +619,7 @@
 							<p>info@partyservice-brath.de</p>
 						</div>
 					</div>
-					<div class="footer__logo">
+					<div class="footer__logo" data-aos="zoom-in" data-aos-duration="3000">
 						<img src="assets/images/logo-footer.png" alt="logo img" />
 					</div>
 					<div class="footer__socials">
@@ -483,6 +653,8 @@
 
 		<!-- Footer End -->
 
+		<!-- Copyright Start -->
+
 		<div class="copyright">
 			<div class="wrap">
 				<p class="copyright__description">
@@ -496,5 +668,14 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- Copyright End -->
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script src="main.js"></script>
 	</body>
 </html>

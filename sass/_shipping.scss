@@ -1,8 +1,6 @@
 .shipping {
-	background: url(../assets/images/shipping-img.png), rgba(0, 0, 0, 1);
-	height: 50vh;
-	background-position: center;
-	background-size: cover;
+	@include bg-img("../assets/images/shipping-img.png");
+	height: 55vh;
 
 	.wrap {
 		height: 100%;
@@ -21,6 +19,6 @@
 	}
 
 	.shipping__btn {
-		@include btn($color-white, $color-black, $color-border-red);
+		@include btn;
 	}
 }

@@ -1,5 +1,4 @@
 .products {
-	background-color: $color-black;
 	padding: $padding-section;
 
 	.wrap {
@@ -9,10 +8,6 @@
 
 .products__content {
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 	width: 50%;
 	margin: 0 auto;
 
@@ -25,19 +20,17 @@
 	}
 
 	.products__description {
-		line-height: $line-height-m;
-		margin-bottom: $unit-xl;
-		font-weight: $font-weight-s;
+		margin-bottom: $unit-lm;
 	}
 
 	.products__btn {
-		@include btn($bg-color-dark-red, $color-white, $color-white);
+		@include btn;
 		margin-bottom: $unit-xl;
 	}
 }
 
 .products__logo {
-	margin-bottom: $unit-xl;
+	margin-bottom: $unit-lm;
 }
 
 .products__cards {
@@ -51,15 +44,16 @@
 
 		.card__text {
 			position: absolute;
-			bottom: 45%;
+			top: 50%;
 			left: 50%;
-			transform: translateX(-50%);
+			transform: translate(-50%, -50%);
 			background: rgba(0, 0, 0, 0.7);
 			width: 100%;
 
 			.card__title {
 				text-align: center;
-				padding: $unit-xs 0;
+				padding: $unit-s 0;
+				font-weight: $font-weight-m;
 			}
 		}
 	}

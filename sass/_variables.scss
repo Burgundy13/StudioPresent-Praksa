@@ -4,6 +4,7 @@ $unit-xs: 8px;
 $unit-s: 16px;
 $unit-m: 24px;
 $unit-l: 32px;
+$unit-lm: 48px;
 $unit-xl: 64px;
 $unit-xxl: 120px;
 
@@ -14,7 +15,7 @@ $font-weight-l: 700;
 $font-weight-m: 400;
 $font-weight-s: 300;
 
-$font-size-l: $unit-l;
+$font-size-l: 32px;
 $font-size-m: 22px;
 $font-size-s: 14px;
 $font-size-xs: 12px;
@@ -22,7 +23,8 @@ $font-size-xs: 12px;
 // Colors
 
 $color-white: #fff;
-$color-black: #252525;
+$color-gray: #ffffff82;
+$color-black: #000000f0;
 $color-border-red: #ff0000;
 
 $bg-color-red: #b50014;
@@ -31,9 +33,9 @@ $bg-color-footer: #66000b;
 
 // Line height
 
-$line-height-m: $unit-m;
+$line-height-m: 24px;
 $line-height-s: 20px;
-$line-height-xs: $unit-s;
+$line-height-xs: 8px;
 
 // Padding
 
