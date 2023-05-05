@@ -40,7 +40,7 @@ body.light-theme {
 	.awards__img,
 	.awards__logo,
 	.products__logo {
-		background-color: $bg-color-dark-red;
+		mix-blend-mode: difference;
 	}
 
 	.awards {
