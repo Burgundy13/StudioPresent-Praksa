@@ -21,6 +21,15 @@
 	padding: $unit-xl;
 	display: none;
 
+	@include media-phone {
+		padding: 0;
+	}
+
+	@include media-phone {
+		width: 350px;
+		height: 300px;
+	}
+
 	.popup__body {
 		height: 100%;
 		display: flex;
@@ -33,11 +42,28 @@
 			padding: $unit-xs 0;
 			width: 100%;
 			background-color: $color-black;
+
+			@include media-phone {
+				width: 80%;
+				padding: 0;
+
+				.popup__title {
+					font-size: $font-size-m;
+				}
+
+				.popup__description {
+					font-size: $font-size-xs;
+				}
+			}
 		}
 
 		.popup__btn {
 			@include btn;
 			margin-top: 10px;
+
+			@include media-phone {
+				padding: $unit-xs $unit-m;
+			}
 		}
 	}
 

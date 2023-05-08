@@ -1,11 +1,20 @@
 .hero {
 	height: 680px;
 
+	@include media-phone {
+		height: 420px;
+	}
+
 	.swiper-pagination-bullet {
 		background: $color-white;
 		opacity: 1;
-		height: 16px;
-		width: 16px;
+		height: $unit-s;
+		width: $unit-s;
+
+		@include media-phone {
+			height: $unit-xs;
+			width: $unit-xs;
+		}
 	}
 
 	.swiper-pagination-bullet-active {
@@ -13,6 +22,11 @@
 		border: 1px solid $color-white;
 		width: $unit-s;
 		height: $unit-s;
+
+		@include media-phone {
+			width: $unit-xs;
+			height: $unit-xs;
+		}
 	}
 
 	.swiper-button-prev,
@@ -21,8 +35,17 @@
 		border: 3px solid $color-white;
 		padding: $unit-m;
 		border-radius: 50%;
+
+		@include media-phone {
+			padding: $unit-s;
+		}
+
 		&::after {
 			font-size: $font-size-m;
+
+			@include media-phone {
+				font-size: $font-size-xs;
+			}
 		}
 	}
 
@@ -30,11 +53,21 @@
 		left: 40%;
 		top: 95%;
 		margin-left: 10px;
+
+		@include media-phone {
+			left: 30%;
+			top: 94%;
+		}
 	}
 
 	.swiper-button-next {
 		right: 40%;
 		top: 95%;
+
+		@include media-phone {
+			right: 30%;
+			top: 94%;
+		}
 	}
 }
 
@@ -42,6 +75,10 @@
 	padding: $unit-xxl;
 	height: 100%;
 	overflow: hidden;
+
+	@include media-phone {
+		padding-left: 0;
+	}
 
 	.hero__text {
 		max-width: 1320px;
@@ -72,6 +109,10 @@
 	background-color: rgba($color-black, 0.5);
 	position: relative;
 
+	@include media-phone {
+		padding: $unit-m;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -80,6 +121,10 @@
 		width: 100%;
 		background-color: inherit;
 		height: 100%;
+
+		@include media-phone {
+			display: none;
+		}
 	}
 
 	.hero__title {

@@ -64,27 +64,28 @@
 							>
 						</li>
 					</ul>
-					<div class="light__mode">
-						<button class="light__btn" aria-label="dark/light mode">
-							<i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+					<div class="hamburger__menu">
+						<div class="hamburger">
+							<a class="nav__link" href="#">
+								<div class="icon__pdf">
+									<img src="assets/images/pdf.png" alt="pdf logo" />
+								</div>
+								download</a
+							>
+						</div>
+						<button class="nav__menu">
+							<span class="menu__bars">
+								<span class="menu__bar menu__bar--up">-</span>
+								<span class="menu__bar menu__bar--middle">-</span>
+								<span class="menu__bar menu__bar--down">-</span></span
+							>
 						</button>
+						<div class="light__mode">
+							<button class="light__btn" aria-label="dark/light mode">
+								<i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+							</button>
+						</div>
 					</div>
-
-					<div class="hamburger">
-						<a class="nav__link" href="#">
-							<div class="icon__pdf">
-								<img src="assets/images/pdf.png" alt="pdf logo" />
-							</div>
-							download</a
-						>
-					</div>
-					<button class="nav__menu">
-						<span class="menu__bars">
-							<span class="menu__bar menu__bar--up"></span>
-							<span class="menu__bar menu__bar--middle"></span>
-							<span class="menu__bar menu__bar--down"></span
-						></span>
-					</button>
 				</nav>
 
 				<!-- Navigation End -->
@@ -95,12 +96,16 @@
 			<div class="banner">
 				<div class="wrap">
 					<div class="worktime">
-						<div class="icon__clock">
-							<img src="assets/images/clock.png" alt="clock logo" />
+						<div class="worktime__title">
+							<img
+								class="worktime__icon"
+								src="assets/images/clock.png"
+								alt="clock logo"
+							/>
+							<span class="worktime__info--weight">Opentime:</span>
 						</div>
 						<p class="worktime__info">
-							<span class="worktime__info--weight">Opentime:</span> Di. - Fr.:
-							07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+							Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
 						</p>
 					</div>
 				</div>
@@ -290,7 +295,7 @@
 						class="products__content"
 						data-aos="fade-zoom-in"
 						data-aos-easing="ease-in-back"
-						data-aos-delay="1000"
+						data-aos-delay="500"
 						data-aos-offset="0"
 					>
 						<h2 class="products__title">Das Handwerk</h2>
@@ -314,7 +319,7 @@
 						</p>
 						<a class="products__btn btn--primary" href="#">Das Handwerk</a>
 					</div>
-					<div class="products__logo" data-aos="zoom-in">
+					<div class="products__logo">
 						<img src="assets/images/logo-2.png" alt="logo img" />
 					</div>
 					<div class="products__cards">
@@ -329,7 +334,7 @@
 								/>
 							</div>
 							<div class="card__text">
-								<h3 class="card__title">Wurstchen</h3>
+								<h3 class="card__title">Würstchen</h3>
 							</div>
 						</div>
 						<div class="products__card">
@@ -343,7 +348,7 @@
 								/>
 							</div>
 							<div class="card__text">
-								<h3 class="card__title">Hahnchen</h3>
+								<h3 class="card__title">Hähnchen</h3>
 							</div>
 						</div>
 						<div class="products__card">
@@ -456,7 +461,7 @@
 								<a class="awards__btn btn--primary" href="#">Das Handwerk</a>
 							</div>
 						</div>
-						<div class="awards__logo" data-aos="zoom-in">
+						<div class="awards__logo">
 							<img src="assets/images/logo-2.png" alt="logo img" />
 						</div>
 						<div
@@ -464,7 +469,7 @@
 							data-aos="flip-down"
 							data-aos-duration="3000"
 						>
-							<h2 class="awards__title">Auszeichnungen</h2>
+							<h2 class="awards__heading">Auszeichnungen</h2>
 							<div class="awards__card">
 								<img
 									class="card__img"
@@ -500,7 +505,7 @@
 								<p class="card__description">Mettwurst mei ullum gloriatur.</p>
 							</div>
 						</div>
-						<div class="awards__logo" data-aos="zoom-in">
+						<div class="awards__logo">
 							<img src="assets/images/logo-2.png" alt="logo img" />
 						</div>
 					</div>
@@ -634,12 +639,12 @@
 							<p>info@partyservice-brath.de</p>
 						</div>
 					</div>
-					<div class="footer__logo" data-aos="zoom-in" data-aos-duration="3000">
+					<div class="footer__logo">
 						<img src="assets/images/logo-footer.png" alt="logo img" />
 					</div>
 					<div class="footer__socials">
+						<p class="footer__socials--title">Besuchen Sie uns auf:</p>
 						<ul class="footer__list">
-							<li class="footer__item">Besuchen Sie uns auf:</li>
 							<li class="footer__item">
 								<a href="#" class="footer__link"
 									><img src="assets/images/twitter.png" alt="twitter logo"
@@ -687,6 +692,7 @@
 		<!-- Copyright End -->
 
 		<!-- Popup Start -->
+
 		<div class="popup">
 			<div class="overlay js-overlay"></div>
 			<div class="content js-popup-content">
@@ -702,6 +708,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Popup End -->
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

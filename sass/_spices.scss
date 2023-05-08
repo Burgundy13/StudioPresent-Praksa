@@ -5,6 +5,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+
+		@include media-phone {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+			padding: 0;
+		}
 	}
 }
 
@@ -14,11 +20,21 @@
 	height: 55vh;
 	min-width: 50vw;
 	min-height: 680px;
+
+	@include media-phone {
+		min-height: 290px;
+	}
 }
 
 .spices__content {
 	flex: 0 0 50%;
 	padding: 0 $unit-xxl;
+
+	@include media-phone {
+		flex: 0 0 100%;
+		text-align: center;
+		padding: $unit-xl $unit-s;
+	}
 
 	.spices__title {
 		margin-bottom: $unit-xs;

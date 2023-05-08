@@ -61,6 +61,10 @@ p {
 	width: 100%;
 	max-width: 1320px;
 	margin: 0 auto;
+
+	@include media-phone {
+		padding: 0 $unit-s;
+	}
 }
 
 .btn--primary {

@@ -1,8 +1,16 @@
 .products {
 	padding: $padding-section;
 
+	@include media-phone {
+		padding: $padding-section-phone;
+	}
+
 	.wrap {
 		padding: 0 $unit-xxl;
+
+		@include media-phone {
+			padding: 0 $unit-s;
+		}
 	}
 }
 
@@ -11,12 +19,20 @@
 	width: 50%;
 	margin: 0 auto;
 
+	@include media-phone {
+		width: 100%;
+	}
+
 	.products__title {
 		margin-bottom: $unit-s;
 	}
 
 	.products__subtitle {
 		margin-bottom: $unit-xl;
+
+		@include media-phone {
+			margin-bottom: $unit-l;
+		}
 	}
 
 	.products__description {
@@ -26,11 +42,23 @@
 	.products__btn {
 		@include btn;
 		margin-bottom: $unit-xl;
+
+		@include media-phone {
+			margin-bottom: $unit-l;
+		}
 	}
 }
 
 .products__logo {
 	margin-bottom: $unit-lm;
+
+	@include media-phone {
+		overflow-x: hidden;
+
+		img {
+			transform: scale(1.2);
+		}
+	}
 }
 
 .products__cards {
@@ -38,9 +66,18 @@
 	align-items: center;
 	justify-content: space-between;
 
+	@include media-phone {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
 	.products__card {
 		flex: 0 0 23%;
 		position: relative;
+
+		@include media-phone {
+			flex: 0 0 48%;
+		}
 
 		.card__text {
 			position: absolute;

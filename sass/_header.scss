@@ -13,6 +13,10 @@
 	width: 177px;
 	z-index: 2;
 
+	@include media-phone {
+		width: 96px;
+	}
+
 	img {
 		position: absolute;
 	}
@@ -22,10 +26,19 @@
 	margin-right: -20px;
 	padding-top: $unit-l;
 
+	@include media-phone {
+		margin-right: 0;
+		padding-top: $unit-xs;
+	}
+
 	.nav__list {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@include media-phone {
+			display: none;
+		}
 
 		.nav__link {
 			padding: 8px 20px;
@@ -44,24 +57,31 @@
 
 //Banner
 
-.icon__clock {
-	height: $unit-s;
-	width: $unit-s;
-}
-
 .banner {
 	background-color: $color-black;
 	padding: $unit-xs 0;
 
 	.worktime {
 		display: flex;
+		align-items: center;
 		margin-left: auto;
 		gap: $unit-xs;
+
+		@include media-phone {
+			flex-wrap: wrap;
+			align-items: flex-end;
+			justify-content: flex-end;
+			flex-direction: column;
+			font-size: $font-size-xxs;
+		}
 
 		.worktime__info {
 			font-size: $font-size-s;
 			line-height: $line-height-xs;
-			padding-top: 5px;
+
+			@include media-phone {
+				font-size: $font-size-xxs;
+			}
 
 			.worktime__info--weight {
 				font-weight: $font-weight-l;
@@ -70,9 +90,40 @@
 	}
 }
 
+.worktime__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+
+	.worktime__icon {
+		height: $unit-s;
+		width: $unit-s;
+	}
+}
+
 //Hamburger menu
+
+.hamburger__menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $unit-xs;
+
+	.nav__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+		padding: $unit-xs;
+	}
+}
 
 .hamburger,
 .nav__menu {
 	display: none;
+
+	@include media-phone {
+		display: block;
+	}
 }

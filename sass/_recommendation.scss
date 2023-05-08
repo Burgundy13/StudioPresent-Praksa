@@ -11,11 +11,19 @@
 
 	.recommendation__title {
 		margin-bottom: $unit-xl;
+
+		@include media-phone {
+			margin-bottom: 0;
+		}
 	}
 
 	.recommendation__btn {
 		@include btn;
 		margin-bottom: $unit-xl;
+
+		@include media-phone {
+			margin-top: $unit-l;
+		}
 	}
 }
 
@@ -71,9 +79,15 @@
 		position: absolute;
 		bottom: -$unit-s;
 		right: $unit-s;
+
+		@include media-phone {
+			bottom: -$unit-m;
+			right: $unit-xl;
+		}
 	}
 
 	.slide__description {
+		padding: 0 $unit-xs;
 		margin-bottom: $unit-l;
 	}
 
@@ -96,9 +110,19 @@
 
 	.swiper-button-prev {
 		left: 28%;
+
+		@include media-phone {
+			left: 30%;
+			top: 94%;
+		}
 	}
 
 	.swiper-button-next {
 		right: 28%;
+
+		@include media-phone {
+			right: 30%;
+			top: 94%;
+		}
 	}
 }

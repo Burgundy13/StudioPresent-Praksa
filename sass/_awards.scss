@@ -1,6 +1,11 @@
 .awards {
 	padding: $padding-section;
 	padding-bottom: $unit-lm;
+
+	@include media-phone {
+		padding: 0;
+		padding-top: $unit-xl;
+	}
 }
 
 .awards__container {
@@ -10,13 +15,26 @@
 	justify-content: center;
 	padding: 0 $unit-xxl;
 
+	@include media-phone {
+		padding: 0;
+	}
+
 	.awards__wrapper {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: $unit-xl;
 
+		@include media-phone {
+			flex-wrap: wrap;
+		}
+
 		.awards__img {
 			flex: 0 0 40%;
+
+			@include media-phone {
+				flex: 0 0 100%;
+				margin-bottom: $unit-xl;
+			}
 		}
 	}
 }
@@ -27,6 +45,12 @@
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
+
+	@include media-phone {
+		flex: 0 0 100%;
+		align-items: center;
+		text-align: center;
+	}
 
 	.awards__title {
 		margin-bottom: $unit-l;
@@ -39,17 +63,42 @@
 
 .awards__logo {
 	margin-bottom: $unit-xl;
+
+	@include media-phone {
+		overflow-x: hidden;
+
+		img {
+			transform: scale(1.2);
+		}
+	}
 }
 
 .awards__cards {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 100px;
+	margin-bottom: $unit-xxl;
+
+	@include media-phone {
+		flex-wrap: wrap;
+		margin-bottom: $unit-xl;
+	}
+
+	.awards__heading {
+		@include media-phone {
+			flex: 0 0 100%;
+			text-align: center;
+			margin-bottom: $unit-xl;
+		}
+	}
 
 	.awards__card {
 		flex: 0 0 15%;
 		margin-bottom: $unit-s;
+
+		@include media-phone {
+			flex: 0 0 45%;
+		}
 
 		.card__img {
 			margin-bottom: $unit-xs;

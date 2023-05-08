@@ -5,12 +5,26 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+
+		@include media-phone {
+			flex-wrap: wrap;
+			padding: 0;
+		}
 	}
 }
 
 .reservation__content {
 	flex: 0 0 50%;
 	padding: 0 $unit-xxl;
+
+	@include media-phone {
+		flex: 0 0 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: $padding-section-phone;
+	}
 
 	.reservation__title {
 		margin-bottom: $unit-l;
@@ -20,8 +34,10 @@
 		margin-bottom: $unit-lm;
 		margin-left: $unit-m;
 		list-style: disc;
+		display: inline-block;
 
 		.reservation__item {
+			width: fit-content;
 			&:not(:last-of-type) {
 				margin-bottom: $unit-xs;
 			}
@@ -38,4 +54,8 @@
 	height: 55vh;
 	min-width: 50vw;
 	min-height: 680px;
+
+	@include media-phone {
+		min-height: 290px;
+	}
 }
