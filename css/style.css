@@ -523,11 +523,8 @@ body.light-theme .btn--primary:hover {
   justify-content: space-between;
   gap: 16px;
 }
-.about__imgs--small .about__img {
-  flex: 0 0 25%;
-}
 .about__imgs--small .about__img img {
-  width: fit-content;
+  width: 100%;
 }
 
 .reservation {

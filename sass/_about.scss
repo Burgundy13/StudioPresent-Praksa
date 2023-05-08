@@ -64,10 +64,8 @@
 	gap: $unit-s;
 
 	.about__img {
-		flex: 0 0 25%;
-
 		img {
-			width: fit-content;
+			width: 100%;
 		}
 	}
 }
