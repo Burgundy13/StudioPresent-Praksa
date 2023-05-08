@@ -165,6 +165,7 @@ body.light-theme .btn--primary:hover {
 .nav .nav__list .nav__link {
   padding: 8px 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
 }
@@ -335,6 +336,7 @@ body.light-theme .btn--primary:hover {
 
 .about__imgs--small {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
@@ -349,6 +351,7 @@ body.light-theme .btn--primary:hover {
 .reservation .wrap {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .reservation__content {
@@ -616,14 +619,12 @@ body.light-theme .btn--primary:hover {
   opacity: 1;
   transform: scale(1.2);
 }
-.recommendation__slider .recommendation__slide.swiper-slide-active .slide__quotes {
+.recommendation__slider .recommendation__slide.swiper-slide-active .slide__quotes,
+.recommendation__slider .recommendation__slide.swiper-slide-active .slide__job {
   display: block;
 }
 .recommendation__slider .recommendation__slide.swiper-slide-active .slide__img {
   visibility: visible;
-}
-.recommendation__slider .recommendation__slide.swiper-slide-active .slide__job {
-  display: block;
 }
 .recommendation__slider .slide__img {
   visibility: hidden;
@@ -684,6 +685,7 @@ body.light-theme .btn--primary:hover {
   flex: 0 0 40%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 8px;
   font-weight: 400;
   font-size: 14px;
@@ -699,6 +701,7 @@ body.light-theme .btn--primary:hover {
 
 .footer__socials {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   flex: 0 0 40%;
 }
@@ -725,4 +728,72 @@ body.light-theme .btn--primary:hover {
 }
 .copyright .copyright__link {
   text-decoration: underline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  display: none;
+}
+
+.content {
+  background-image: url("../assets/images/people-team.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 500px;
+  z-index: 4;
+  padding: 64px;
+  display: none;
+}
+.content .popup__body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.content .popup__body .popup__text {
+  padding: 8px 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9411764706);
+}
+.content .popup__body .popup__btn {
+  display: inline-block;
+  min-width: 174px;
+  line-height: 24px;
+  padding: 16px 32px;
+  font-weight: 400;
+  border-radius: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.content .close__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+.content .close__btn .bx-x {
+  font-size: 32px;
+}
+
+.content.popup,
+.overlay.popup {
+  display: block;
 }

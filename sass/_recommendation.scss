@@ -38,15 +38,13 @@
 			opacity: 1;
 			transform: scale(1.2);
 
-			.slide__quotes {
+			.slide__quotes,
+			.slide__job {
 				display: block;
 			}
 
 			.slide__img {
 				visibility: visible;
-			}
-			.slide__job {
-				display: block;
 			}
 		}
 	}

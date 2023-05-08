@@ -61,3 +61,24 @@ themeButton.addEventListener("click", () => {
 	localStorage.setItem("selected-theme", getCurrentTheme());
 	localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+//Popup
+
+const popupContent = document.querySelector(".js-popup-content");
+const popupCloseBtn = document.querySelector(".js-close-btn");
+const popupOverlay = document.querySelector(".js-overlay");
+const html = document.querySelector("html");
+
+window.onload = function () {
+	setTimeout(function () {
+		popupContent.classList.add("popup");
+		popupOverlay.classList.add("popup");
+		html.style.overflowY = "hidden";
+	}, 3000);
+
+	popupCloseBtn.addEventListener("click", function () {
+		popupContent.classList.remove("popup");
+		popupOverlay.classList.remove("popup");
+		html.style.overflowY = "unset";
+	});
+};

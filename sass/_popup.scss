@@ -1,0 +1,63 @@
+.overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 3;
+	display: none;
+}
+
+.content {
+	@include bg-img("../assets/images/people-team.jpg");
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 750px;
+	height: 500px;
+	z-index: 4;
+	padding: $unit-xl;
+	display: none;
+
+	.popup__body {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		.popup__text {
+			padding: $unit-xs 0;
+			width: 100%;
+			background-color: $color-black;
+		}
+
+		.popup__btn {
+			@include btn;
+			margin-top: 10px;
+		}
+	}
+
+	.close__btn {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		text-align: center;
+		background-color: $color-white;
+		cursor: pointer;
+		border: none;
+		border-radius: 50%;
+
+		.bx-x {
+			font-size: $font-size-l;
+		}
+	}
+}
+
+.content.popup,
+.overlay.popup {
+	display: block;
+}
