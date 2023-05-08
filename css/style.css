@@ -365,7 +365,7 @@ body.light-theme .btn--primary:hover {
 }
 @media (max-width: 475px) {
   .hero .swiper-button-prev {
-    left: 30%;
+    left: 25%;
     top: 94%;
   }
 }
@@ -375,7 +375,7 @@ body.light-theme .btn--primary:hover {
 }
 @media (max-width: 475px) {
   .hero .swiper-button-next {
-    right: 30%;
+    right: 25%;
     top: 94%;
   }
 }
@@ -483,7 +483,7 @@ body.light-theme .btn--primary:hover {
   .about__content {
     margin-top: 64px;
     padding-right: 0;
-    flex: 0 0 100%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -513,6 +513,10 @@ body.light-theme .btn--primary:hover {
   text-align: center;
 }
 
+.about__wrapper {
+  width: 100%;
+}
+
 .about__imgs--big {
   margin-bottom: 16px;
 }
@@ -522,6 +526,9 @@ body.light-theme .btn--primary:hover {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+.about__imgs--small .about__img {
+  flex: 1 0 25%;
 }
 .about__imgs--small .about__img img {
   width: 100%;

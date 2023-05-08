@@ -26,7 +26,7 @@
 	@include media-phone {
 		margin-top: $unit-xl;
 		padding-right: 0;
-		flex: 0 0 100%;
+		width: 100%;
 		text-align: center;
 	}
 
@@ -53,6 +53,10 @@
 	}
 }
 
+.about__wrapper {
+	width: 100%;
+}
+
 .about__imgs--big {
 	margin-bottom: $unit-s;
 }
@@ -64,6 +68,7 @@
 	gap: $unit-s;
 
 	.about__img {
+		flex: 1 0 25%;
 		img {
 			width: 100%;
 		}

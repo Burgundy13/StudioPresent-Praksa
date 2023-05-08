@@ -55,7 +55,7 @@
 		margin-left: 10px;
 
 		@include media-phone {
-			left: 30%;
+			left: 25%;
 			top: 94%;
 		}
 	}
@@ -65,7 +65,7 @@
 		top: 95%;
 
 		@include media-phone {
-			right: 30%;
+			right: 25%;
 			top: 94%;
 		}
 	}
