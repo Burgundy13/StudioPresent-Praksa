@@ -91,3 +91,21 @@ window.onload = function () {
 		html.style.overflowY = "unset";
 	});
 };
+
+// Hamburger menu
+
+const hamburgerMenu = document.querySelector(".js-hamburger");
+const navList = document.querySelector(".js-nav-list");
+const body = document.querySelector("body");
+
+hamburgerMenu.addEventListener("click", function () {
+	navList.classList.toggle("show");
+	body.classList.toggle("no-scroll");
+});
+
+window.addEventListener("resize", () => {
+	if (window.innerWidth > 500) {
+		navList.classList.remove("show");
+		body.classList.remove("no-scroll");
+	}
+});

@@ -7,12 +7,22 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $font-family;
 	width: 100%;
 	color: $color-white;
 	background-color: $color-black;
 	overflow-x: hidden;
+}
+
+body.no-scroll {
+	overflow: hidden;
+	height: 100vh;
 }
 
 a {

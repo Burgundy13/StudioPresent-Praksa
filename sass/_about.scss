@@ -64,12 +64,10 @@
 	gap: $unit-s;
 
 	.about__img {
-		height: 165px;
-		width: 165px;
+		flex: 0 0 25%;
 
-		@include media-phone {
-			height: 75px;
-			width: 115px;
+		img {
+			width: fit-content;
 		}
 	}
 }

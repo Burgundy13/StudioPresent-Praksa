@@ -11,7 +11,7 @@
 .header__img {
 	position: relative;
 	width: 177px;
-	z-index: 2;
+	z-index: 100;
 
 	@include media-phone {
 		width: 96px;
@@ -104,7 +104,7 @@
 
 //Hamburger menu
 
-.hamburger__menu {
+.nav__menu {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -119,11 +119,48 @@
 	}
 }
 
-.hamburger,
-.nav__menu {
+.nav__menu--item,
+.hamburger__menu {
 	display: none;
 
 	@include media-phone {
 		display: block;
+	}
+}
+
+.hamburger__menu {
+	background-color: transparent;
+	border: none;
+	color: $color-white;
+
+	.bx-menu {
+		font-size: $font-size-l;
+	}
+}
+
+//Hamburger menu
+
+.nav__list.show {
+	display: block;
+	position: absolute;
+	background-color: $bg-color-red;
+	width: 70%;
+	height: 70vh;
+	top: 65px;
+	right: 0;
+	z-index: 20;
+	padding-top: $unit-m;
+
+	.nav__item {
+		padding: $unit-xs;
+		width: 60%;
+		margin: 0 auto;
+
+		&:last-of-type {
+			display: none;
+		}
+		.nav__link {
+			border-bottom: 1px solid $color-white;
+		}
 	}
 }
