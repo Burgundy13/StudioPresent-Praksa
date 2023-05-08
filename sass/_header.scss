@@ -37,7 +37,30 @@
 		justify-content: center;
 
 		@include media-phone {
-			display: none;
+			display: block;
+			position: absolute;
+			background-color: $bg-color-red;
+			width: 70%;
+			height: 70vh;
+			top: 65px;
+			right: 0;
+			z-index: 20;
+			padding-top: $unit-m;
+			transform: translateX(100%);
+			transition: 0.3s ease-in;
+
+			.nav__item {
+				padding: $unit-xs;
+				width: 60%;
+				margin: 0 auto;
+
+				&:last-of-type {
+					display: none;
+				}
+				.nav__link {
+					border-bottom: 1px solid $color-white;
+				}
+			}
 		}
 
 		.nav__link {
@@ -110,7 +133,7 @@
 	justify-content: center;
 	gap: $unit-xs;
 
-	.nav__link {
+	.nav__menu--link {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -138,29 +161,7 @@
 	}
 }
 
-//Hamburger menu
-
 .nav__list.show {
 	display: block;
-	position: absolute;
-	background-color: $bg-color-red;
-	width: 70%;
-	height: 70vh;
-	top: 65px;
-	right: 0;
-	z-index: 20;
-	padding-top: $unit-m;
-
-	.nav__item {
-		padding: $unit-xs;
-		width: 60%;
-		margin: 0 auto;
-
-		&:last-of-type {
-			display: none;
-		}
-		.nav__link {
-			border-bottom: 1px solid $color-white;
-		}
-	}
+	transform: translateX(0);
 }

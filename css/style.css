@@ -187,7 +187,28 @@ body.light-theme .btn--primary:hover {
 }
 @media (max-width: 475px) {
   .nav .nav__list {
+    display: block;
+    position: absolute;
+    background-color: #b50014;
+    width: 70%;
+    height: 70vh;
+    top: 65px;
+    right: 0;
+    z-index: 20;
+    padding-top: 24px;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+  }
+  .nav .nav__list .nav__item {
+    padding: 8px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .nav .nav__list .nav__item:last-of-type {
     display: none;
+  }
+  .nav .nav__list .nav__item .nav__link {
+    border-bottom: 1px solid #fff;
   }
 }
 .nav .nav__list .nav__link {
@@ -252,7 +273,7 @@ body.light-theme .btn--primary:hover {
   justify-content: center;
   gap: 8px;
 }
-.nav__menu .nav__link {
+.nav__menu .nav__menu--link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -282,25 +303,7 @@ body.light-theme .btn--primary:hover {
 
 .nav__list.show {
   display: block;
-  position: absolute;
-  background-color: #b50014;
-  width: 70%;
-  height: 70vh;
-  top: 65px;
-  right: 0;
-  z-index: 20;
-  padding-top: 24px;
-}
-.nav__list.show .nav__item {
-  padding: 8px;
-  width: 60%;
-  margin: 0 auto;
-}
-.nav__list.show .nav__item:last-of-type {
-  display: none;
-}
-.nav__list.show .nav__item .nav__link {
-  border-bottom: 1px solid #fff;
+  transform: translateX(0);
 }
 
 .hero {
