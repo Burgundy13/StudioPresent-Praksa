@@ -5,7 +5,7 @@
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.7);
-	z-index: 3;
+	z-index: 20;
 	display: none;
 }
 
@@ -17,7 +17,7 @@
 	transform: translate(-50%, -50%);
 	width: 750px;
 	height: 500px;
-	z-index: 200;
+	z-index: 30;
 	padding: $unit-xl;
 	display: none;
 
