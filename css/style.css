@@ -669,10 +669,8 @@ body.light-theme .btn--primary:hover {
 }
 @media (max-width: 475px) {
   .products__logo {
-    overflow-x: hidden;
-  }
-  .products__logo img {
-    transform: scale(1.2);
+    transform: scale(2.5);
+    padding: 16px 0 8px;
   }
 }
 
@@ -867,10 +865,7 @@ body.light-theme .btn--primary:hover {
 }
 @media (max-width: 475px) {
   .awards__logo {
-    overflow-x: hidden;
-  }
-  .awards__logo img {
-    transform: scale(1.2);
+    transform: scale(2.5);
   }
 }
 
