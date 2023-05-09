@@ -1,8 +1,12 @@
+// Media  query
+
 @mixin media-phone {
 	@media (max-width: 475px) {
 		@content;
 	}
 }
+
+// Elements
 
 @mixin btn {
 	display: inline-block;
