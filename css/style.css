@@ -725,7 +725,7 @@ body.light-theme .btn--primary:hover {
 }
 
 .spices__img {
-  background-image: url("../assets/images/spices.jpg");
+  background-image: url("../assets/images/spices-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
