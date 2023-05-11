@@ -54,6 +54,14 @@
 		top: 95%;
 		margin-left: 10px;
 
+		@include media-laptop {
+			left: 35%;
+		}
+
+		@include media-tablet {
+			left: 30%;
+		}
+
 		@include media-phone {
 			left: 25%;
 			top: 94%;
@@ -63,6 +71,14 @@
 	.swiper-button-next {
 		right: 40%;
 		top: 95%;
+
+		@include media-laptop {
+			right: 35%;
+		}
+
+		@include media-tablet {
+			right: 30%;
+		}
 
 		@include media-phone {
 			right: 25%;
@@ -129,5 +145,15 @@
 
 	.hero__title {
 		margin-bottom: $unit-s;
+
+		@include media-small-phone {
+			font-size: $font-size-l;
+		}
+	}
+
+	.hero__description {
+		@include media-small-phone {
+			font-size: $font-size-s;
+		}
 	}
 }

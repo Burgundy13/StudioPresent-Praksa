@@ -1,14 +1,18 @@
 .products {
 	padding: $padding-section;
 
-	@include media-phone {
-		padding: $padding-section-phone;
+	@include media-laptop {
+		padding: $padding-section-xl;
 	}
 
 	.wrap {
 		padding: 0 $unit-xxl;
 
-		@include media-phone {
+		@include media-laptop {
+			padding: 0 $unit-l;
+		}
+
+		@include media-tablet {
 			padding: 0 $unit-s;
 		}
 	}
@@ -19,7 +23,7 @@
 	width: 50%;
 	margin: 0 auto;
 
-	@include media-phone {
+	@include media-tablet {
 		width: 100%;
 	}
 

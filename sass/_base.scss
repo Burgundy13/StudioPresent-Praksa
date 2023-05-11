@@ -72,7 +72,7 @@ p {
 	max-width: 1320px;
 	margin: 0 auto;
 
-	@include media-phone {
+	@include media-laptop {
 		padding: 0 $unit-s;
 	}
 }

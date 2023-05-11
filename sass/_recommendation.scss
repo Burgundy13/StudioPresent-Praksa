@@ -21,7 +21,7 @@
 		@include btn;
 		margin-bottom: $unit-xl;
 
-		@include media-phone {
+		@include media-tablet {
 			margin-top: $unit-l;
 		}
 	}
@@ -41,6 +41,18 @@
 		opacity: 0.3;
 		padding: $unit-l;
 		transition: transform 0.25s ease-in;
+
+		@include media-laptop {
+			padding: $unit-s;
+		}
+
+		@include media-tablet {
+			padding: $unit-xl;
+		}
+
+		@include media-phone {
+			padding: $unit-l;
+		}
 
 		&.swiper-slide-active {
 			opacity: 1;
@@ -80,8 +92,12 @@
 		bottom: -$unit-s;
 		right: $unit-s;
 
-		@include media-phone {
+		@include media-tablet {
 			bottom: -$unit-m;
+			right: $unit-xxl;
+		}
+
+		@include media-phone {
 			right: $unit-xl;
 		}
 	}
@@ -111,7 +127,7 @@
 	.swiper-button-prev {
 		left: 28%;
 
-		@include media-phone {
+		@include media-tablet {
 			left: 30%;
 			top: 94%;
 		}
@@ -120,7 +136,7 @@
 	.swiper-button-next {
 		right: 28%;
 
-		@include media-phone {
+		@include media-tablet {
 			right: 30%;
 			top: 94%;
 		}

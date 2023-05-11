@@ -15,7 +15,7 @@ const swiperRecommendation = new Swiper(".js-recommendation-slider", {
 			slidesPerView: 1,
 			spaceBetween: 10,
 		},
-		768: {
+		900: {
 			slidesPerView: 3,
 			spaceBetween: 70,
 		},

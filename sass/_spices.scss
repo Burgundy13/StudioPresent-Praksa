@@ -6,7 +6,7 @@
 		align-items: center;
 		justify-content: flex-end;
 
-		@include media-phone {
+		@include media-tablet {
 			flex-wrap: wrap;
 			flex-direction: column-reverse;
 			padding: 0;
@@ -21,7 +21,11 @@
 	min-width: 50vw;
 	min-height: 680px;
 
-	@include media-phone {
+	@include media-laptop {
+		min-height: 490px;
+	}
+
+	@include media-tablet {
 		min-height: 290px;
 	}
 }
@@ -30,10 +34,18 @@
 	flex: 0 0 50%;
 	padding: 0 $unit-xxl;
 
-	@include media-phone {
+	@include media-laptop {
+		padding: 0 $unit-xl;
+	}
+
+	@include media-tablet {
 		flex: 0 0 100%;
 		text-align: center;
 		padding: $unit-xl $unit-s;
+	}
+
+	@include media-phone {
+		padding: $unit-l 0;
 	}
 
 	.spices__title {

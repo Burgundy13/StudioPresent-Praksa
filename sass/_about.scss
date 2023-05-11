@@ -1,8 +1,8 @@
 .about {
 	padding: $padding-section;
 
-	@include media-phone {
-		padding: $padding-section-phone;
+	@include media-laptop {
+		padding: $padding-section-xl;
 	}
 
 	.about__container {
@@ -11,10 +11,14 @@
 		justify-content: center;
 		padding: 0 $unit-xxl;
 
-		@include media-phone {
+		@include media-laptop {
+			padding: 0 $unit-l;
+		}
+
+		@include media-tablet {
+			padding: 0;
 			flex-direction: column-reverse;
 			flex-wrap: wrap;
-			padding: 0;
 		}
 	}
 }
@@ -23,7 +27,7 @@
 	flex: 0 0 50%;
 	padding-right: $unit-xxl;
 
-	@include media-phone {
+	@include media-tablet {
 		margin-top: $unit-xl;
 		padding-right: 0;
 		width: 100%;
@@ -43,8 +47,12 @@
 		align-items: center;
 		gap: $unit-s;
 
-		@include media-phone {
+		@include media-tablet {
 			justify-content: center;
+		}
+
+		@include media-small-phone {
+			flex-wrap: wrap;
 		}
 
 		.about__btn {

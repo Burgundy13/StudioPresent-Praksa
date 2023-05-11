@@ -26,8 +26,11 @@
 	margin-right: -20px;
 	padding-top: $unit-l;
 
-	@include media-phone {
+	@include media-laptop {
+		padding-top: $unit-m;
 		margin-right: 0;
+	}
+	@include media-phone {
 		padding-top: $unit-xs;
 	}
 
@@ -36,13 +39,13 @@
 		align-items: center;
 		justify-content: center;
 
-		@include media-phone {
+		@include media-laptop {
 			display: block;
 			position: absolute;
 			background-color: $bg-color-red;
 			width: 100%;
 			height: 100vh;
-			top: 65px;
+			top: 80px;
 			right: 0;
 			z-index: 10;
 			padding-top: $unit-m;
@@ -63,12 +66,17 @@
 			}
 		}
 
+		@include media-phone {
+			top: $unit-xl;
+		}
+
 		.nav__link {
 			padding: 8px 20px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			gap: 5px;
+			white-space: nowrap;
 		}
 	}
 }
@@ -90,11 +98,14 @@
 		margin-left: auto;
 		gap: $unit-xs;
 
-		@include media-phone {
+		@include media-tablet {
 			flex-wrap: wrap;
 			align-items: flex-end;
 			justify-content: flex-end;
 			flex-direction: column;
+		}
+
+		@include media-phone {
 			font-size: $font-size-xxs;
 		}
 
@@ -146,7 +157,7 @@
 .hamburger__menu {
 	display: none;
 
-	@include media-phone {
+	@include media-laptop {
 		display: block;
 	}
 }
