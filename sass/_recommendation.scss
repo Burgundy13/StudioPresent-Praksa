@@ -51,7 +51,7 @@
 		}
 
 		@include media-phone {
-			padding: $unit-l;
+			padding: $unit-lm;
 		}
 
 		&.swiper-slide-active {
@@ -99,6 +99,10 @@
 
 		@include media-phone {
 			right: $unit-xl;
+		}
+
+		@include media-small-phone {
+			right: $unit-l;
 		}
 	}
 
