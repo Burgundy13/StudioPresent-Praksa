@@ -131,6 +131,10 @@
 			left: 30%;
 			top: 94%;
 		}
+
+		@include media-small-phone {
+			left: 25%;
+		}
 	}
 
 	.swiper-button-next {
@@ -139,6 +143,9 @@
 		@include media-tablet {
 			right: 30%;
 			top: 94%;
+		}
+		@include media-small-phone {
+			right: 25%;
 		}
 	}
 }

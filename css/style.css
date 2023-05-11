@@ -490,12 +490,12 @@ body.light-theme .btn--primary:hover {
 .hero__wrap .hero__title {
   margin-bottom: 16px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .hero__wrap .hero__title {
     font-size: 32px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .hero__wrap .hero__description {
     font-size: 14px;
   }
@@ -556,7 +556,7 @@ body.light-theme .btn--primary:hover {
     justify-content: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .about__content .about__wrap {
     flex-wrap: wrap;
   }
@@ -839,7 +839,7 @@ body.light-theme .btn--primary:hover {
 }
 @media screen and (max-width: 500px) {
   .spices__content {
-    padding: 32px 0;
+    padding: 32px 16px;
   }
 }
 .spices__content .spices__title {
@@ -1147,6 +1147,11 @@ body.light-theme .btn--primary:hover {
     top: 94%;
   }
 }
+@media screen and (max-width: 400px) {
+  .recommendation__slider .swiper-button-prev {
+    left: 25%;
+  }
+}
 .recommendation__slider .swiper-button-next {
   right: 28%;
 }
@@ -1154,6 +1159,11 @@ body.light-theme .btn--primary:hover {
   .recommendation__slider .swiper-button-next {
     right: 30%;
     top: 94%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .recommendation__slider .swiper-button-next {
+    right: 25%;
   }
 }
 

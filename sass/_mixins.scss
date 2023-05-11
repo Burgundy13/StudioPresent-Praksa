@@ -19,7 +19,7 @@
 }
 
 @mixin media-small-phone {
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 400px) {
 		@content;
 	}
 }
