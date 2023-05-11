@@ -76,7 +76,7 @@
 .awards__logo {
 	margin-bottom: $unit-xl;
 
-	@include media-phone {
+	@include media-tablet {
 		transform: scale(2.5);
 	}
 }

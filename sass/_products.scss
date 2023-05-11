@@ -56,7 +56,7 @@
 .products__logo {
 	margin-bottom: $unit-lm;
 
-	@include media-phone {
+	@include media-tablet {
 		transform: scale(2.5);
 		padding: $unit-s 0 $unit-xs;
 	}

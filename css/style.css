@@ -743,7 +743,7 @@ body.light-theme .btn--primary:hover {
 .products__logo {
   margin-bottom: 48px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .products__logo {
     transform: scale(2.5);
     padding: 16px 0 8px;
@@ -969,7 +969,7 @@ body.light-theme .btn--primary:hover {
 .awards__logo {
   margin-bottom: 64px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .awards__logo {
     transform: scale(2.5);
   }
